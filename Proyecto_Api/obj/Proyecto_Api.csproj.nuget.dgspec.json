@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emiliano\\Desktop\\vsCode\\DWES\\Proyectos\\Proyecto_APIS_CSharp\\Proyecto_Api\\Proyecto_Api.csproj": {}
+    "c:\\Users\\Emiliano\\Desktop\\vsCode\\DWES\\Proyectos\\Proyecto_APIS_CSharp\\Proyecto_Api\\Proyecto_Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emiliano\\Desktop\\vsCode\\DWES\\Proyectos\\Proyecto_APIS_CSharp\\Proyecto_Api\\Proyecto_Api.csproj": {
+    "c:\\Users\\Emiliano\\Desktop\\vsCode\\DWES\\Proyectos\\Proyecto_APIS_CSharp\\Proyecto_Api\\Proyecto_Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emiliano\\Desktop\\vsCode\\DWES\\Proyectos\\Proyecto_APIS_CSharp\\Proyecto_Api\\Proyecto_Api.csproj",
+        "projectUniqueName": "c:\\Users\\Emiliano\\Desktop\\vsCode\\DWES\\Proyectos\\Proyecto_APIS_CSharp\\Proyecto_Api\\Proyecto_Api.csproj",
         "projectName": "Proyecto_Api",
-        "projectPath": "C:\\Users\\Emiliano\\Desktop\\vsCode\\DWES\\Proyectos\\Proyecto_APIS_CSharp\\Proyecto_Api\\Proyecto_Api.csproj",
+        "projectPath": "c:\\Users\\Emiliano\\Desktop\\vsCode\\DWES\\Proyectos\\Proyecto_APIS_CSharp\\Proyecto_Api\\Proyecto_Api.csproj",
         "packagesPath": "C:\\Users\\Emiliano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emiliano\\Desktop\\vsCode\\DWES\\Proyectos\\Proyecto_APIS_CSharp\\Proyecto_Api\\obj\\",
+        "outputPath": "c:\\Users\\Emiliano\\Desktop\\vsCode\\DWES\\Proyectos\\Proyecto_APIS_CSharp\\Proyecto_Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

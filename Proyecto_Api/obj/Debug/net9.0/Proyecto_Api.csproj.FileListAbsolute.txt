@@ -1,0 +1,15 @@
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\bin\Debug\net9.0\Proyecto_Api.exe
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\bin\Debug\net9.0\Proyecto_Api.deps.json
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\bin\Debug\net9.0\Proyecto_Api.runtimeconfig.json
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\bin\Debug\net9.0\Proyecto_Api.dll
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\bin\Debug\net9.0\Proyecto_Api.pdb
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\obj\Debug\net9.0\Proyecto_Api.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\obj\Debug\net9.0\Proyecto_Api.AssemblyInfoInputs.cache
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\obj\Debug\net9.0\Proyecto_Api.AssemblyInfo.cs
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\obj\Debug\net9.0\Proyecto_Api.csproj.CoreCompileInputs.cache
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\obj\Debug\net9.0\Proyecto_Api.sourcelink.json
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\obj\Debug\net9.0\Proyecto_Api.dll
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\obj\Debug\net9.0\refint\Proyecto_Api.dll
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\obj\Debug\net9.0\Proyecto_Api.pdb
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\obj\Debug\net9.0\Proyecto_Api.genruntimeconfig.cache
+c:\Users\Emiliano\Desktop\vsCode\DWES\Proyectos\Proyecto_APIS_CSharp\Proyecto_Api\obj\Debug\net9.0\ref\Proyecto_Api.dll
