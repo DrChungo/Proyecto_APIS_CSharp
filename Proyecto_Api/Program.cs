@@ -1,6 +1,4 @@
-﻿using System;
-using System.Text.Json;
-using Models;
+﻿using Models;
 using Functions;
 using Validations;
 
@@ -30,15 +28,16 @@ namespace EjerciciosCSharp
                         continue;
                     }
 
-                    AnimeData animeSelected = anime?.Data?.FirstOrDefault() ?? new AnimeData();
+                    AnimeData? animeSelected = anime?.Data?.FirstOrDefault();
 
-                    if (!Validation.IsValid(animeSelected))
+                    if (!Validation.IsValid(animeSelected) || !Validation.IsValid(animeSelected?.Id))
                     {
-                        Console.WriteLine($"Error, no se reciben los datos del anime {animeSelected}.");
+                        Console.WriteLine("No se encontraron datos válidos del anime.");
                         continue;
                     }
 
-                    int id = animeSelected.Id ?? 0;
+
+                    int id = animeSelected!.Id!.Value;
                     string name = animeSelected.Title;
 
                     if (!Validation.IsValid(id) || !Validation.IsValid(name))
@@ -49,43 +48,9 @@ namespace EjerciciosCSharp
 
 
                     Console.WriteLine($"\nHas elegido el anime {name}.");
-                    int option=0;
 
-                    do
-                    {
-                        Console.WriteLine("\n\n1) Mostrar información básica del anime\n2) Mostrar sinopsis \n3) Mostrar géneros\n4) Mostrar personajes\n5) Elegir otro anime\n6) Cerrar programa");
-                        Console.Write("\nElige una opción: ");
-                        string? input = Console.ReadLine();
-                        option = ValidationNumber.AskForNumber(input);
 
-                        switch (option)
-                        {
-                            case 1:
-                                BasicInfo.GetBasicInfo(animeSelected, name);
-                                break;
-                            case 2:
-                                Synopsis.GetSynopsis(animeSelected, name);
-                                break;
-                            case 3:
-                                Genre.GetGenre(animeSelected, name);
-                                break;
-                            case 4:
-                                await Characters.GetCharactersAsync(name, id);
-                                break;
-                            case 5:
-                                Console.WriteLine("Saliendo...");
-                                break;
-                            case 6:
-                                Console.WriteLine("Saliendo del programa...");
-                                Environment.Exit(0);
-                                break;
-
-                            default:
-                                Console.WriteLine("Solo puedes elegir una opción del 1 al 6.");
-                                break;
-                        }
-
-                    } while (option != 5);
+                    await Show.ShowOptionsAsync(animeSelected, name, id);
 
                 }
 

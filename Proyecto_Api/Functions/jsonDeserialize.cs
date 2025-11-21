@@ -1,30 +1,26 @@
-using System;
 using System.Text.Json;
-using Models;
+
 
 namespace Functions
 {
     public class GetJson
     {
 
-        public static async Task<AnimeResponse?> GetJsonAsync(string url)
+        public static async Task<T?> GetJsonAsync<T>(string url) where T : class
         {
             try
             {
-
-           
                   using (HttpClient client = new HttpClient())
                 {
                     HttpResponseMessage response = await client.GetAsync(url);
                     response.EnsureSuccessStatusCode();
                     string contentString = await response.Content.ReadAsStringAsync();
-                    var content = JsonSerializer.Deserialize<AnimeResponse>(contentString);
+                    var content = JsonSerializer.Deserialize<T>(contentString);
 
                     return content;
 
                 }
-                   
-               
+                
             }
             catch (Exception ex)
             {
@@ -32,5 +28,7 @@ namespace Functions
                 return null;
             }
         }
+
+       
     }
 }
