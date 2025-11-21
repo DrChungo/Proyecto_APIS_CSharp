@@ -17,17 +17,9 @@ namespace Models
         [JsonPropertyName("url")]
         public string Url { get; set; } = "";
 
-        [JsonPropertyName("images")]
-        public AnimeImages? Images { get; set; }
-
-        [JsonPropertyName("trailer")]
-        public Trailer? Trailer { get; set; }
-
         [JsonPropertyName("approved")]
         public bool? Approved { get; set; }
 
-        [JsonPropertyName("titles")]
-        public List<Title>? Titles { get; set; }
 
         [JsonPropertyName("title")]
         public string Title { get; set; } = "";
@@ -56,8 +48,7 @@ namespace Models
         [JsonPropertyName("airing")]
         public bool? Airing { get; set; }
 
-        [JsonPropertyName("aired")]
-        public Aired? Aired { get; set; }
+
 
         [JsonPropertyName("duration")]
         public string Duration { get; set; } = "";
@@ -95,8 +86,6 @@ namespace Models
         [JsonPropertyName("year")]
         public int? Year { get; set; }
 
-        [JsonPropertyName("broadcast")]
-        public Broadcast? Broadcast { get; set; }
 
         [JsonPropertyName("producers")]
         public List<ItemInfo>? Producers { get; set; }
@@ -120,98 +109,7 @@ namespace Models
         public List<ItemInfo>? Demographics { get; set; }
     }
 
-    public class AnimeImages
-    {
-        [JsonPropertyName("jpg")]
-        public ImageData? Jpg { get; set; }
 
-        [JsonPropertyName("webp")]
-        public ImageData? Webp { get; set; }
-    }
-
-    public class ImageData
-    {
-        [JsonPropertyName("image_url")]
-        public string ImageUrl { get; set; } = "";
-
-        [JsonPropertyName("small_image_url")]
-        public string SmallImageUrl { get; set; } = "";
-
-        [JsonPropertyName("large_image_url")]
-        public string LargeImageUrl { get; set; } = "";
-    }
-
-    public class Trailer
-    {
-        [JsonPropertyName("youtube_id")]
-        public string YoutubeId { get; set; } = "";
-
-        [JsonPropertyName("url")]
-        public string Url { get; set; } = "";
-
-        [JsonPropertyName("embed_url")]
-        public string EmbedUrl { get; set; } = "";
-    }
-
-    public class Title
-    {
-        [JsonPropertyName("type")]
-        public string Type { get; set; } = "";
-
-        [JsonPropertyName("title")]
-        public string Name { get; set; } = "";
-    }
-
-    public class Aired
-    {
-        [JsonPropertyName("from")]
-        public string From { get; set; } = "";
-
-        [JsonPropertyName("to")]
-        public string To { get; set; } = "";
-
-        [JsonPropertyName("prop")]
-        public AiredProp? Prop { get; set; }
-    }
-
-    public class AiredProp
-    {
-        [JsonPropertyName("from")]
-        public DateProp? From { get; set; }
-
-        [JsonPropertyName("to")]
-        public DateProp? To { get; set; }
-
-        [JsonPropertyName("string")]
-        public string String { get; set; } = "";
-    }
-
-    public class DateProp
-    {
-        [JsonPropertyName("day")]
-        public int? Day { get; set; }
-
-        [JsonPropertyName("month")]
-        public int? Month { get; set; }
-
-        [JsonPropertyName("year")]
-        public int? Year { get; set; }
-    }
-
-    public class Broadcast
-    {
-        [JsonPropertyName("day")]
-        public string Day { get; set; } = "";
-
-        [JsonPropertyName("time")]
-        public string Time { get; set; } = "";
-
-        [JsonPropertyName("timezone")]
-        public string Timezone { get; set; } = "";
-
-        [JsonPropertyName("string")]
-        public string String { get; set; } = "";
-    }
 
     public class ItemInfo
     {
@@ -228,30 +126,5 @@ namespace Models
         public string Url { get; set; } = "";
     }
 
-    public class Pagination
-    {
-        [JsonPropertyName("last_visible_page")]
-        public int? LastVisiblePage { get; set; }
 
-        [JsonPropertyName("has_next_page")]
-        public bool? HasNextPage { get; set; }
-
-        [JsonPropertyName("current_page")]
-        public int? CurrentPage { get; set; }
-
-        [JsonPropertyName("items")]
-        public PaginationItems? Items { get; set; }
-    }
-
-    public class PaginationItems
-    {
-        [JsonPropertyName("count")]
-        public int? Count { get; set; }
-
-        [JsonPropertyName("total")]
-        public int? Total { get; set; }
-
-        [JsonPropertyName("per_page")]
-        public int? PerPage { get; set; }
-    }
 }

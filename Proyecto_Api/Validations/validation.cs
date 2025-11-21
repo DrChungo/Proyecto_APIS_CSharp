@@ -1,4 +1,3 @@
-using System;
 using Models;
 
 namespace Validations
@@ -29,7 +28,7 @@ namespace Validations
 
           public static bool IsValid(AnimeData? anime)
         {
-            if (anime == null )
+            if (anime == null || anime.Genres==null)
             {
                 return false;
             }
@@ -40,7 +39,7 @@ namespace Validations
 
               public static bool IsValid(CharacterData? anime)
         {
-            if (anime == null )
+            if (anime == null || anime.VoiceActors==null || anime.Role==null)
             {
                 return false;
             }
