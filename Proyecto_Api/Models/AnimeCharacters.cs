@@ -2,11 +2,14 @@ using System.Text.Json.Serialization;
 
 namespace Models
 {
+    // Modelo que representa la respuesta de personajes enviada por la API.
+    // Contiene una lista de CharacterData.
     public class CharacterResponse 
     {
         [JsonPropertyName("data")]
         public List<CharacterData>? Data { get; set; }
     }
+
 
     public class CharacterData
     {
@@ -20,6 +23,7 @@ namespace Models
         public List<VoiceActor> VoiceActors { get; set; } = new List<VoiceActor>();
     }
 
+    
     public class Character
     {
         [JsonPropertyName("mal_id")]
@@ -32,9 +36,6 @@ namespace Models
         public string? Name { get; set; }
     }
 
-
-
-
     public class VoiceActor
     {
         [JsonPropertyName("person")]
@@ -44,6 +45,7 @@ namespace Models
         public string? Language { get; set; }
     }
 
+
     public class Person
     {
         [JsonPropertyName("mal_id")]
@@ -52,10 +54,7 @@ namespace Models
         [JsonPropertyName("url")]
         public string? Url { get; set; }
 
-
         [JsonPropertyName("name")]
         public string? Name { get; set; }
     }
-
-  
 }

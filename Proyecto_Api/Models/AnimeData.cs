@@ -3,12 +3,16 @@ using System.Text.Json.Serialization;
 
 namespace Models
 {
+   // Modelo que representa la respuesta completa de la API de Jikan
+    // conteniendo una lista de animes.
     public class AnimeResponse 
     {
         [JsonPropertyName("data")]
         public List<AnimeData>? Data { get; set; }
     }
 
+    // Modelo que contiene toda la información de un anime
+    // recibida desde la API de Jikan.
     public class AnimeData
     {
         [JsonPropertyName("mal_id")]

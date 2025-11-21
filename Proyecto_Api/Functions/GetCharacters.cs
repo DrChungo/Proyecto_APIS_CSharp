@@ -1,12 +1,14 @@
 using Models;
 using Validations;
-
-
+ 
 namespace Functions
 {
     public class Characters
     {
-
+        // Obtiene y muestra la lista de personajes del anime seleccionado.
+        // @param name   Nombre del anime.
+        // @param id     ID del anime en la API (mal_id).
+        // @return       No devuelve valor; imprime los personajes y permite consultar uno en detalle.
         public static async Task GetCharactersAsync(string name, int id)
         {
             string url = $"https://api.jikan.moe/v4/anime/{id}/characters";
@@ -32,13 +34,11 @@ namespace Functions
                     return;
                 }
 
-                Console.WriteLine($"{count}){nameCharacter}");
-
+                Console.WriteLine($"{count}) {nameCharacter}");
                 count++;
-
             }
 
-            Console.WriteLine("\nQuieres ver la información de un personaje en concreto? (s/n)");
+            Console.WriteLine("\n¿Quieres ver la información de un personaje en concreto? (s/n)");
             string option = ValidationString.AskForString(Console.ReadLine());
 
             if (!ValidationOption.AskForOption(option))
@@ -47,25 +47,20 @@ namespace Functions
             }
             else
             {
-
                 Console.WriteLine("Ingresa el nombre del personaje: ");
                 string userCharacter = ValidationString.AskForString(Console.ReadLine());
                 userCharacter = userCharacter.ToLower();
 
-
                 bool found = false;
+
                 foreach (var character in animeCharacters!.Data!)
                 {
                     string nameCharacter = character.Character!.Name!.ToLower();
                     string role = character.Role ?? "";
 
-
-
-
                     if (!Validation.IsValid(character))
                     {
                         Console.WriteLine("No se han encontrado los actores de voz o roles.");
-
                     }
 
                     if (nameCharacter.Contains(userCharacter, StringComparison.InvariantCultureIgnoreCase))
@@ -82,19 +77,14 @@ namespace Functions
                             Console.WriteLine($"- Actor de voz: {actorName} | Idioma: {language}");
                         }
                     }
-
-                    
                 }
 
-                  if (!found)
-                    {
-                        Console.WriteLine("No se ha encontrado el personaje");
-                        return;
-                    }
+                if (!found)
+                {
+                    Console.WriteLine("No se ha encontrado el personaje");
+                    return;
+                }
             }
-
-
-
         }
     }
 }
