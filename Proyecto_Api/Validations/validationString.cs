@@ -2,9 +2,13 @@ namespace Validations
 {
     public class ValidationString
     {
+        // Valida una cadena ingresada por el usuario.
+        // @param input   Texto ingresado por el usuario.
+        // @return        La cadena validada, sin estar vacía y sin contener números.
+        //                Si la entrada no es válida, se solicita nuevamente.
         public static string AskForString(string? input)
         {
-            input=input?.Trim().ToLower();
+            input = input?.Trim().ToLower();
             
             if (string.IsNullOrWhiteSpace(input))
             {

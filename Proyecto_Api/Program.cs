@@ -7,6 +7,10 @@ namespace EjerciciosCSharp
 {
     class Program
     {
+// Punto de entrada principal del programa.
+// @param none  No recibe parámetros.
+// @return     Ejecuta un bucle que solicita un nombre de anime, consulta la API de Jikan,
+//             valida los datos recibidos y muestra opciones del anime seleccionado.
         static async Task Main()
         {
 
