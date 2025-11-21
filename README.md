@@ -11,28 +11,46 @@ una vez echo esto deberia de funcionar. Acontinuacion tienes un ejemplo
 
 ---------------------------------------
 # Estructura del Proyecto 
-/Models
-    AnimeResponse.cs
-    AnimeData.cs
-    CharacterResponse.cs
-    CharacterData.cs
-    ItemInfo.cs
-    Person.cs
-    VoiceActor.cs
+    /Models
 
-/Validations
-    Validation.cs
-    ValidationString.cs
-    ValidationNumber.cs
-    ValidationOption.cs
+      AnimeResponse.cs
+    
+      AnimeData.cs
+    
+      CharacterResponse.cs
+    
+      CharacterData.cs
+    
+      ItemInfo.cs
+    
+      Person.cs
+    
+      VoiceActor.cs
 
-/Functions
-    GetJson.cs
-    Show.cs
-    BasicInfo.cs
-    Synopsis.cs
-    Genre.cs
-    Characters.cs
+    /Validations
+
+      Validation.cs
+    
+      ValidationString.cs
+    
+      ValidationNumber.cs
+    
+       ValidationOption.cs
+
+    /Functions
+
+     GetJson.cs
+    
+     Show.cs
+    
+     BasicInfo.cs
+    
+     Synopsis.cs
+    
+     Genre.cs
+    
+     Characters.cs
+    
 
 Program.cs
 
